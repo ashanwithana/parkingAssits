@@ -5,6 +5,40 @@
                 <h1 class="header-title">Parking Overview</h1>
                 <p class="header-subtitle">Live status of all parking zones</p>
             </div>
+            <div class="filter-controls">
+                <div class="form-group filter-select">
+                    <label for="siteSelect" class="form-label"><i class="bi bi-buildings me-1"></i>Site</label>
+                    <select class="form-select" id="siteSelect">
+                        <option selected>Select Sites</option>
+                        @for (item of siteList; track $index) {
+                        <option [value]="item.siteId">{{item.siteName}}</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group filter-select">
+                    <label for="buildingSelect" class="form-label"><i class="bi bi-building me-1"></i>Building</label>
+                    <select class="form-select" id="buildingSelect">
+                        <option selected>Select Buildings</option>
+                        <option>Available</option>
+                        <option>Occupied</option>
+                        <option>Reserved</option>
+                        <option>Maintenance</option>
+                    </select>
+                </div>
+
+                <div class="form-group filter-select">
+                    <label for="floorSelect" class="form-label"><i class="bi bi-arrows-expand me-1"></i>  Floor</label>
+                    <select class="form-select" id="floorSelect">
+                        <option selected>Select Floors</option>
+                        <option>Standard Car</option>
+                        <option>Motorcycle</option>
+                        <option>EV Charging</option>
+                    </select>
+                </div>
+            </div>
+
+
             <div class="search-box">
                 <i class="bi bi-search"></i>
                 <input type="text" class="form-control" placeholder="Search Spot ID...">
@@ -46,6 +80,8 @@
 
         <section class="parking-layout">
             <div class="spot-grid">
+
+                
                 <div class="spot-car" data-status="occupied">
                     <div class="spot-id">A-01</div>
                     <div class="spot-status"><span class="status-dot"></span> Occupied</div>
