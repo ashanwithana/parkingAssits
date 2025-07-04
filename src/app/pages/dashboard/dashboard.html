@@ -1,1 +1,84 @@
-<p>dashboard works!</p>
+<body>
+    <main class="container-xxl main-content">
+        <header class="dashboard-header">
+            <div>
+                <h1 class="header-title">Parking Overview</h1>
+                <p class="header-subtitle">Live status of all parking zones</p>
+            </div>
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" class="form-control" placeholder="Search Spot ID...">
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value">24</span>
+                    <span class="stat-label">Total Spots</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon" style="color: #28a745;"><i class="bi bi-check-circle"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value">5</span>
+                    <span class="stat-label">Available</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon" style="color: #ffc107;"><i class="bi bi-bookmark-star"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Reserved</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-radial" style="--value: 63; --color: #0d6efd;">
+                    <div class="stat-radial-value">63%</div>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-value">Occupancy</span>
+                    <span class="stat-label">Currently in use</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="parking-layout">
+            <div class="spot-grid">
+                <div class="spot-car" data-status="occupied">
+                    <div class="spot-id">A-01</div>
+                    <div class="spot-status"><span class="status-dot"></span> Occupied</div>
+                </div>
+                <div class="spot-car" data-status="available">
+                    <div class="spot-id">A-02</div>
+                    <div class="spot-status"><span class="status-dot"></span> Available</div>
+                </div>
+                <div class="spot-car" data-status="reserved">
+                    <div class="spot-id">A-03</div>
+                    <div class="spot-status"><span class="status-dot"></span> Reserved</div>
+                </div>
+                <div class="spot-car" data-status="maintenance">
+                    <div class="spot-id">A-04</div>
+                    <div class="spot-status"><span class="status-dot"></span> Maintenance</div>
+                </div>
+                <div class="spot-car" data-status="occupied">
+                    <div class="spot-id">B-01</div>
+                    <div class="spot-status"><span class="status-dot"></span> Occupied</div>
+                </div>
+                <div class="spot-car" data-status="occupied">
+                    <div class="spot-id">B-02</div>
+                    <div class="spot-status"><span class="status-dot"></span> Occupied</div>
+                </div>
+                <div class="spot-car" data-status="available">
+                    <div class="spot-id">B-03</div>
+                    <div class="spot-status"><span class="status-dot"></span> Available</div>
+                </div>
+                <div class="spot-car" data-status="available">
+                    <div class="spot-id">B-04</div>
+                    <div class="spot-status"><span class="status-dot"></span> Available</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>

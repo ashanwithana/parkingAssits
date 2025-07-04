@@ -1,0 +1,89 @@
+.navbar-container {
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar-modern {
+  background: rgba(28, 30, 33, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1.5rem;
+}
+
+.brand-gradient {
+  background: linear-gradient(45deg, #0dcaf0, #0d6efd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 500;
+  padding: 0.6rem 1rem !important;
+  border-radius: 99px;
+  transition: all 0.25s ease-in-out;
+
+  i {
+    vertical-align: -0.15em;
+  }
+
+  &:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  &.active {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu {
+  background: rgba(35, 38, 41, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 0.5rem 0;
+  margin-top: 0.75rem !important;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1.25rem;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(13, 202, 240, 0.2);
+    color: #fff;
+  }
+}
+
+.logout-link:hover, .logout-link:focus {
+  background-color: rgba(220, 53, 69, 0.3) !important;
+}
+
+.dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
